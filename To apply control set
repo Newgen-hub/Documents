@@ -1,0 +1,25 @@
+String getworkstep = ifr.getActivityName();
+
+        if (controlID.equalsIgnoreCase("CSR")) {
+            if (getworkstep.equalsIgnoreCase("CSR")) {
+                ifr.applyGroup("CSR");
+            } 
+            else if (getworkstep.equalsIgnoreCase("Start Event_1")) {
+                ifr.applyGroup("CSR");
+            }
+            else if (getworkstep.equalsIgnoreCase("CPC_Supervisor")) {
+                ifr.applyGroup("other");
+            } else if (getworkstep.equalsIgnoreCase("Exception_handling")) {
+                ifr.applyGroup("other");
+            } else if (getworkstep.equalsIgnoreCase("BRMS")) {
+                ifr.applyGroup("other");
+            } else if (getworkstep.equalsIgnoreCase("SMS_Banking")) {
+                ifr.applyGroup("other");
+            } else if (getworkstep.equalsIgnoreCase("Internet_Banking")) {
+                ifr.applyGroup("other");
+            } else if (getworkstep.equalsIgnoreCase("Welcome_Kit_Generation")) {
+                ifr.applyGroup("other");
+            }
+        }
+
+//CSR AND OTHER are control set name and startevent,cpc supervisor etc., are worksteps
