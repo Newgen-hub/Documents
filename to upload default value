@@ -1,0 +1,75 @@
+if (controlId.equalsIgnoreCase("Parent_Country")) {                    -----> field 
+
+    String defaultCountryCode = "AE";                                  -----> default value
+
+    Object currentValue = ifr.getValue("Parent_Country");             
+ 
+      if (currentValue == null || currentValue.toString().isEmpty())
+
+        {
+
+           ifr.setValue("Parent_Country", defaultCountryCode);
+
+        }
+
+    ifr.setStyle("Parent_Country", "editable", "true");
+
+     }
+
+    else if (controlId.equalsIgnoreCase("Residence_Country")) {
+
+    String defaultCountryCode = "AE";
+
+    Object currentValue = ifr.getValue("Residence_Country");
+ 
+        if (currentValue == null || currentValue.toString().isEmpty()) 
+
+          {
+
+              ifr.setValue("Residence_Country", defaultCountryCode);
+
+          }
+
+    ifr.setStyle("Residence_Country", "editable", "true");
+
+     }
+
+     else if (controlId.equalsIgnoreCase("Language")) {
+
+    String defaultCountryCode = "GB";
+
+    Object currentValue = ifr.getValue("Language");
+ 
+        if (currentValue == null || currentValue.toString().isEmpty()) 
+
+          {
+
+              ifr.setValue("Language", defaultCountryCode);
+
+          }
+
+    ifr.setStyle("Language", "editable", "true");
+
+     }
+
+      else if (controlId.equalsIgnoreCase("Currency_Code")) {
+
+    String defaultCountryCode = "AED";
+
+    Object currentValue = ifr.getValue("Currency_Code");
+ 
+        if (currentValue == null || currentValue.toString().isEmpty()) 
+
+          {
+
+              ifr.setValue("Currency_Code", defaultCountryCode);
+
+          }
+
+    ifr.setStyle("Currency_Code", "editable", "true");
+
+     }
+
+ 
+
+ 
